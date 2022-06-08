@@ -198,7 +198,7 @@ export default function Form() {
         <div className="w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full">
           <button
             onClick={handleForm}
-            type="button"
+            type="submit"
             className="relative bg-blue text-white w-auto px-6 py-2.5 font-swiss font-bold"
           >
             Verzenden
