@@ -114,7 +114,7 @@ export default function Form() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": event.target.getAttribute("name"),
-        ...name,
+        ...inputs,
       }),
     })
       .then(() => alert("Success!"))
