@@ -14,7 +14,14 @@ import Layout from "../components/layout";
 import Card from "../components/card";
 import SliderShow from "../components/slideShow";
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default function Form() {
+  const [state, setState] = React.useState({});
   // Handle inputs
   const [inputs, setInputs] = useState({});
   const [nameErrorValue, setNameErrorValue] = useState("");
@@ -32,6 +39,7 @@ export default function Form() {
     const name = event.target.name;
     const value = event.target.value;
     setInputs((values) => ({ ...values, [name]: value }));
+    setState({ ...state, [event.target.name]: event.target.value });
   };
 
   // Single inputs checks
@@ -99,14 +107,6 @@ export default function Form() {
     }
   };
 
-  const encode = (data) => {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     fetch("/", {
@@ -114,7 +114,7 @@ export default function Form() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": event.target.getAttribute("name"),
-        ...inputs,
+        ...state,
       }),
     })
       .then(() => alert("Success!"))
