@@ -95,11 +95,46 @@ export default function Form() {
       messageError === false
     ) {
       console.log(inputs);
+      handleSubmit(event, inputs);
     }
   };
+
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": event.target.getAttribute("name"),
+        ...name,
+      }),
+    })
+      .then(function () {
+        window.location.assign("/contact-thanks/");
+      })
+      .catch((error) => alert(error));
+  };
+
   return (
-    <form name="contact" method="POST" data-netlify="true">
+    <form
+      name="contactForm"
+      id="contact-form"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
       <input type="hidden" name="form-name" value="contact" />
+      <label class="hidden">
+        Don’t fill this out if you’re human:
+        <input name="bot-field" />
+      </label>
       <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
         <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">
           <input
@@ -199,7 +234,7 @@ export default function Form() {
         <div className="w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full">
           <button
             onClick={handleForm}
-            type="submit"
+            type="button"
             className="relative bg-blue text-white w-auto px-6 py-2.5 font-swiss font-bold"
           >
             Verzenden
