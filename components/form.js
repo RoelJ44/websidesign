@@ -137,7 +137,7 @@ export default function Form() {
         <div className="flex items-center mb-12">
           <svg
             role="status"
-            class="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+            className="w-8 h-8 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
             viewBox="0 0 100 101"
             fill="#000057"
             color="white"
