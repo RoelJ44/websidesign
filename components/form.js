@@ -124,17 +124,7 @@ export default function Form() {
   };
 
   return (
-    <form
-      name="contactForm"
-      id="contact-form"
-      data-netlify="true"
-      // netlify-honeypot="bot-field"
-    >
-      <input type="hidden" name="form-name" value="contact" />
-      {/* <label className="hidden">
-        Don’t fill this out if you’re human:
-        <input name="bot-field" />
-      </label> */}
+    <form name="contact-form" id="contact-form" data-netlify="true">
       <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
         <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">
           <input
