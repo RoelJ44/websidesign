@@ -74,10 +74,12 @@ export default function Form() {
   };
   const handleCheckbox = () => {
     if (checkbox.checked) {
-      setCheckboxErrorValue("")
+      setCheckboxErrorValue("");
       return;
     }
-    setCheckboxErrorValue("U dient akkoord te gaan met de algemene voorwaarden")
+    setCheckboxErrorValue(
+      "U dient akkoord te gaan met de algemene voorwaarden"
+    );
   };
 
   const handleForm = () => {
@@ -96,7 +98,7 @@ export default function Form() {
     }
   };
   return (
-    <form>
+    <form name="contact" method="POST" data-netlify="true">
       <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
         <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">
           <input
@@ -175,23 +177,20 @@ export default function Form() {
             id="checkbox"
             name="checkbox"
           />
-          <label
-            htmlFor="checkbox"
-            className="cursor-auto text-blue"
-          >
+          <label htmlFor="checkbox" className="cursor-auto text-black">
             Ik heb de{" "}
             <Link href="/algemene-voorwaarden">
               <a className="font-bold text-blue font-swiss" target="_blank">
                 Algemene voorwaarden
               </a>
-            </Link> 
-            {" "}en{" "}
+            </Link>{" "}
+            en{" "}
             <Link href="/privacy-verklaring">
               <a className="font-bold text-blue font-swiss" target="_blank">
                 Privacy verklaring
               </a>
-            </Link> 
-            {" "}gelezen en ga hiermee akkoord *
+            </Link>{" "}
+            gelezen en ga hiermee akkoord *
           </label>
           <p className="text-[red] w-full">{checkboxErrorValue}</p>
         </div>

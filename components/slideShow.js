@@ -68,7 +68,7 @@ export default function SlideShow() {
     ],
   };
   return (
-    <div className="relative bg-blue w-full item pt-20 pb-28">
+    <div className="relative bg-blue w-full item pt-20 pb-28 px-4">
       <H2 addClass="text-center text-white mb-16">
         Projecten waar wij trots op zijn
       </H2>
