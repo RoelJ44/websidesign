@@ -108,6 +108,7 @@ export default function Form() {
   };
 
   const handleSubmit = (event) => {
+    event.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -122,7 +123,6 @@ export default function Form() {
       //   console.log("yaay");
       // })
       .catch((error) => alert(error));
-    event.preventDefault();
   };
 
   return (
