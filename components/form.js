@@ -108,7 +108,6 @@ export default function Form() {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -117,11 +116,13 @@ export default function Form() {
         ...name,
       }),
     })
-      .then(function () {
-        // window.location.assign("/");
-        console.log("yaay");
-      })
+      .then(() => alert("Success!"))
+      // .then(function () {
+      //   // window.location.assign("/");
+      //   console.log("yaay");
+      // })
       .catch((error) => alert(error));
+    event.preventDefault();
   };
 
   return (
