@@ -102,8 +102,8 @@ export default function Form() {
       phoneError === false &&
       messageError === false
     ) {
-      console.log(inputs);
-      handleSubmit(event, inputs);
+      // console.log(inputs);
+      handleSubmit(event, state, inputs);
     }
   };
 
@@ -117,7 +117,7 @@ export default function Form() {
         ...state,
       }),
     })
-      .then(() => alert("Success!"))
+      .then(() => console.log(state), console.log("Succes message"))
       // .then(function () {
       //   // window.location.assign("/");
       //   console.log("yaay");
