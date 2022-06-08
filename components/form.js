@@ -101,7 +101,7 @@ export default function Form() {
       messageError === false
     ) {
       // console.log(inputs);
-      handleSubmit(event, state, inputs);
+      handleSubmit(event, inputs);
     }
   };
 
@@ -115,7 +115,7 @@ export default function Form() {
         ...inputs,
       }),
     })
-      .then(() => console.log(state), console.log("Succes message"))
+      .then(() => console.log(encode(inputs)), console.log("Succes message"))
       // .then(function () {
       //   // window.location.assign("/");
       //   console.log("yaay");
