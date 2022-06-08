@@ -15,7 +15,7 @@ import SliderShow from "../components/slideShow";
 
 export default function Footer() {
   return (
-    <footer class="bg-blue pt-12 lg:pt-16 pb-8 border-[20px] md:border-[40px] border-white relative">
+    <footer className="bg-blue pt-12 lg:pt-16 pb-8 border-[20px] md:border-[40px] border-white relative">
       <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 absolute top-0 left-0 rotate-90">
         <Image
           className="w-full h-full"
@@ -25,60 +25,56 @@ export default function Footer() {
           height={500}
         />
       </div>
-      <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 text-gray">
-        <ul class="text-lg font-light pb-8 flex flex-wrap justify-center">
-          <li class="w-full mb-12 md:mb-0 md:w-1/2 lg:w-1/3">
-            <div class="text-center lg:text-left lg:flex lg:justify-center lg:items-center lg:flex-col">
+      <div className="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 text-gray">
+        <ul className="text-lg font-light pb-8 flex flex-wrap justify-center">
+          <li className="w-full mb-12 md:mb-0 md:w-1/2 lg:w-1/3">
+            <div className="text-center lg:text-left lg:flex lg:justify-center lg:items-center lg:flex-col">
               <div>
-                <h2 class="text-white font-swiss font-bold mb-2">Contact</h2>
+                <h2 className="text-white font-swiss font-bold mb-2">
+                  Contact
+                </h2>
                 <hr className="w-16 h-1 bg-white mb-4 mx-auto lg:ml-0" />
                 <ul>
-                  <li class="mb-4">Straatsburglaan 10</li>
-                  <li class="mb-4">6137 JC Sittard-Geleen</li>
-                  <li class="mb-4">+31 6 363 588 63</li>
-                  <li class="mb-4">service@websidesign.nl</li>
+                  <li className="mb-4">Straatsburglaan 10</li>
+                  <li className="mb-4">6137 JC Sittard-Geleen</li>
+                  <li className="mb-4">+31 6 363 588 63</li>
+                  <li className="mb-4">service@websidesign.nl</li>
                 </ul>
               </div>
             </div>
           </li>
-          <li class="w-full mb-12 md:mb-0 md:w-1/2 lg:w-1/3">
-            <div class="text-center lg:text-left lg:flex lg:justify-center lg:items-center lg:flex-col">
+          <li className="w-full mb-12 md:mb-0 md:w-1/2 lg:w-1/3">
+            <div className="text-center lg:text-left lg:flex lg:justify-center lg:items-center lg:flex-col">
               <div>
-                <h2 class="text-white font-swiss font-bold mb-2">Pagina's</h2>
+                <h2 className="text-white font-swiss font-bold mb-2">
+                  Pagina's
+                </h2>
                 <hr className="w-16 h-1 bg-white mb-4 mx-auto lg:ml-0" />
                 <ul>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link href="/">
-                      <a
-                        className="py-3 hover:text-white transition-colors duration-100"
-                        >
+                      <a className="py-3 hover:text-white transition-colors duration-100">
                         Home
                       </a>
                     </Link>
                   </li>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link href="services">
-                      <a
-                        className="py-3 hover:text-white transition-colors duration-100"
-                        >
+                      <a className="py-3 hover:text-white transition-colors duration-100">
                         Services
                       </a>
                     </Link>
                   </li>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link href="/projecten">
-                      <a
-                        className="py-3 hover:text-white transition-colors duration-100"
-                        >
+                      <a className="py-3 hover:text-white transition-colors duration-100">
                         Projecten
                       </a>
                     </Link>
                   </li>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link href="/contact">
-                      <a
-                        className="py-3 hover:text-white transition-colors duration-100"
-                        >
+                      <a className="py-3 hover:text-white transition-colors duration-100">
                         Contact
                       </a>
                     </Link>
@@ -87,45 +83,41 @@ export default function Footer() {
               </div>
             </div>
           </li>
-          <li class="w-full mb-12 md:mb-0 mt-0 md:mt-16 lg:mt-0 md:w-1/2 lg:w-1/3">
-            <div class="text-center lg:text-left lg:flex lg:justify-center lg:items-center lg:flex-col">
+          <li className="w-full mb-12 md:mb-0 mt-0 md:mt-16 lg:mt-0 md:w-1/2 lg:w-1/3">
+            <div className="text-center lg:text-left lg:flex lg:justify-center lg:items-center lg:flex-col">
               <div>
-                <h2 class="text-white font-swiss font-bold mb-2">Legaal</h2>
+                <h2 className="text-white font-swiss font-bold mb-2">Legaal</h2>
                 <hr className="w-16 h-1 bg-white mb-4 mx-auto lg:ml-0" />
                 <ul>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link href="/algemene-voorwaarden">
-                      <a
-                        className="py-3 hover:text-white transition-colors duration-100"
-                        >
+                      <a className="py-3 hover:text-white transition-colors duration-100">
                         Algemene voorwaarden
                       </a>
                     </Link>
                   </li>
-                  <li class="mb-4">
+                  <li className="mb-4">
                     <Link href="/privacy-verklaring">
-                      <a
-                        className="py-3 hover:text-white transition-colors duration-100"
-                        >
+                      <a className="py-3 hover:text-white transition-colors duration-100">
                         Privacy verklaring
                       </a>
                     </Link>
                   </li>
-                  <li class="mb-4">Kvk nr. 212 115 205</li>
-                  <li class="mb-4">Btw nr. 544 546 274</li>
+                  <li className="mb-4">Kvk nr. 212 115 205</li>
+                  <li className="mb-4">Btw nr. 544 546 274</li>
                 </ul>
               </div>
             </div>
           </li>
         </ul>
         <hr className="w-8/12 md:w-1/2 h-0.5 bg-white mx-auto" />
-        <div class="pt-8 px-12 sm:px-0 flex max-w-xs mx-auto items-center justify-between">
+        <div className="pt-8 px-12 sm:px-0 flex max-w-xs mx-auto items-center justify-between">
           {/* <a href="#"> */}
           <svg
             width="20"
             height="20"
             fill="#fff"
-            class="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
+            className="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -137,7 +129,7 @@ export default function Footer() {
             width="20"
             height="20"
             fill="#fff"
-            class="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
+            className="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -150,7 +142,7 @@ export default function Footer() {
             width="20"
             height="20"
             fill="#fff"
-            class="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
+            className="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
             viewBox="0 0 1792 1792"
           >
             <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"></path>
@@ -161,7 +153,7 @@ export default function Footer() {
             width="20"
             height="20"
             fill="#fff"
-            class="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
+            className="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -173,7 +165,7 @@ export default function Footer() {
             width="20"
             height="20"
             fill="#fff"
-            class="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
+            className="text-xl opacity-90 cursor-pointer hover:opacity-50 transition-all duration-100"
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -181,7 +173,7 @@ export default function Footer() {
           </svg>
           {/* </a> */}
         </div>
-        <div class="text-center pt-6 sm:pt-8 font-light flex items-center justify-center">
+        <div className="text-center pt-6 sm:pt-8 font-light flex items-center justify-center">
           Copyright © 2022
         </div>
       </div>

@@ -18,7 +18,7 @@ export default function CardLeft({ title, paragraph, iconLink, addClass }) {
       <SmallLine addClass="bg-blue mb-4" />
       <P addClass="text-darkblue mb-0">{paragraph}</P>
       <div className="absolute flex items-center justify-center text-blue top-0 right-0 w-32 h-32">
-        <img src={iconLink} alt="sad" width={50} height={50} />
+        <Image src={iconLink} alt="sad" width={50} height={50} />
       </div>
     </div>
   );

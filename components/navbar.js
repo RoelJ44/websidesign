@@ -240,7 +240,7 @@ export default function Navbar() {
           </ul>
           {/* Mobile menu items */}
           <div
-            class={`mobile-menu-items lg:hidden left-0 duration-300 opacity-95 z-40 w-full h-screen bg-white absolute ${
+            className={`mobile-menu-items lg:hidden left-0 duration-300 opacity-95 z-40 w-full h-screen bg-white absolute ${
               showMobile ? "-top-0" : "-top-[100vh]"
             }`}
           >
