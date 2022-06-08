@@ -131,7 +131,7 @@ export default function Form() {
       netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contact" />
-      <label class="hidden">
+      <label className="hidden">
         Don’t fill this out if you’re human:
         <input name="bot-field" />
       </label>
