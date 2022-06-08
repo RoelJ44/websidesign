@@ -118,7 +118,8 @@ export default function Form() {
       }),
     })
       .then(function () {
-        window.location.assign("/");
+        // window.location.assign("/");
+        console.log("yaay");
       })
       .catch((error) => alert(error));
   };
