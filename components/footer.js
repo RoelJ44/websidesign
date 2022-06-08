@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="text-center lg:text-left lg:flex lg:justify-center lg:items-center lg:flex-col">
               <div>
                 <h2 className="text-white font-swiss font-bold mb-2">
-                  Pagina's
+                  {"Pagina's"}
                 </h2>
                 <hr className="w-16 h-1 bg-white mb-4 mx-auto lg:ml-0" />
                 <ul>
