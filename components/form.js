@@ -153,8 +153,8 @@ export default function Form() {
           <span className="ml-1">Aan het laden...</span>
         </div>
       )}
-      <form method="POST" name="Contact Form" netlify>
-        <input type="hidden" name="form-name" value="Contact Form" />
+      <form method="POST" name="Contact Form" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact-form" />
         <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
           <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">
             <input
@@ -253,12 +253,13 @@ export default function Form() {
 
           <div className="w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full">
             <button
-              onClick={() => {
-                handleForm();
-                setLoader(false);
-                setStatus("");
-              }}
-              type="button"
+              // onClick={() => {
+              //   handleForm();
+              //   setLoader(false);
+              //   setStatus("");
+              // }}
+              // type="button"
+              type="submit"
               className="relative bg-blue text-white w-auto px-6 py-2.5 font-swiss font-bold"
             >
               Verzenden
