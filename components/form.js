@@ -153,7 +153,7 @@ export default function Form() {
           <span className="ml-1">Aan het laden...</span>
         </div>
       )}
-      <form method="POST" name="contact form" data-netlify="true">
+      {/* <form method="POST" name="contact form" data-netlify="true">
         <input type="hidden" name="form-name" value="contact-form" />
         <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
           <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">
@@ -269,6 +269,35 @@ export default function Form() {
             </button>
           </div>
         </div>
+      </form> */}
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>
+            Your Name: <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email: <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Role:{" "}
+            <select name="role[]" multiple>
+              <option value="leader">Leader</option>
+              <option value="follower">Follower</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <label>
+            Message: <textarea name="message"></textarea>
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
       </form>
     </>
   );
