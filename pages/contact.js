@@ -28,7 +28,7 @@ export default function Projecten() {
     >
       <div className="item container mx-auto max-w-7xl">
         <div className="mb-20 md:mb-0 w-full md:px-12 md:w-7/12 md:float-left">
-          <Form />
+          {/* <Form /> */}
         </div>
         <div className="w-full sm:w-8/12 mx-auto md:px-12 md:w-5/12 md:float-left">
           <div className="mb-10 max-w-md mx-auto sm:float-left sm:w-1/2 md:mt-10 md:w-full lg:mt-0">
