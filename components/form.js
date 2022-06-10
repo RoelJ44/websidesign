@@ -119,11 +119,7 @@ export default function Form() {
         ...inputs,
       }),
     })
-      // .then(() => console.log(encode(inputs)), console.log("Succes message"))
       .then(function () {
-        // window.location.assign("/");
-        console.log("yaay");
-        // setButtonText("Verzonden");
         setLoader(false);
         setStatus("Verzonden");
       })
@@ -157,7 +153,7 @@ export default function Form() {
       )}
       <form
         method="POST"
-        name="testForm"
+        name="websidesign-contact_form"
         id="contact-form"
         netlify
         data-netlify="true"

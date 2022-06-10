@@ -33,17 +33,29 @@ export default function Navbar() {
       <div className="container mx-auto">
         <div className="flex justify-between py-4 px-6 md:px-0 lg:px-20 2xl:px-16">
           <div className="w-8/12 lg:w-64 xl:w-80 flex z-50">
-            {!navbar && (
-              <>
-                {!showMobile && (
-                  <Image
-                    alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
-                    src="/logo/logo_sideways_wit.svg"
-                    width={300}
-                    height={80}
-                  />
+            <Link href="/">
+              <a href="/">
+                {!navbar && (
+                  <>
+                    {!showMobile && (
+                      <Image
+                        alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
+                        src="/logo/logo_sideways_wit.svg"
+                        width={300}
+                        height={80}
+                      />
+                    )}
+                    {showMobile && (
+                      <Image
+                        alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
+                        src="/logo/logo_sideways.svg"
+                        width={300}
+                        height={80}
+                      />
+                    )}
+                  </>
                 )}
-                {showMobile && (
+                {navbar && (
                   <Image
                     alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
                     src="/logo/logo_sideways.svg"
@@ -51,16 +63,8 @@ export default function Navbar() {
                     height={80}
                   />
                 )}
-              </>
-            )}
-            {navbar && (
-              <Image
-                alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
-                src="/logo/logo_sideways.svg"
-                width={300}
-                height={80}
-              />
-            )}
+              </a>
+            </Link>
           </div>
           {/* Pc Menu */}
           <ul className="hidden lg:flex items-center">

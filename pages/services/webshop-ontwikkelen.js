@@ -35,7 +35,7 @@ export default function Services({}) {
       <div className="item container mx-auto px-4">
         <CardLarge
           title="Webshop ontwikkelen"
-          paragraph="Wij kunnen een website ontwerp maken, een ontwerp realiseren of een gehele website op maat maken. Wij kunnen een website ontwerp maken, een ontwerp realiseren of een gehele website op maat maken. Wij kunnen een website ontwerp maken, een ontwerp realiseren of een gehele website op maat maken. "
+          paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
           imageLink="/webshop-ontwikkelen.jpg"
         />
       </div>
@@ -48,17 +48,17 @@ export default function Services({}) {
           <CardSmall
             title="Conversie gericht"
             iconLink="/icons/chart-line-solid.svg"
-            paragraph="asd"
+            paragraph="Één van de belangrijkste aspecten van een goede webshop is een indeling die leid tot conversies."
           />
           <CardSmall
             title="Op maat gemaakt"
             iconLink="/icons/pen-ruler-solid.svg"
-            paragraph="asd"
+            paragraph="Bij het ontwerp van je webshop kijken we als eerst naar de bestaande huisstijl en passen het design hierop aan"
           />
           <CardSmall
             title="SEO optimalisatie"
             iconLink="/icons/magnifying-glass-solid.svg"
-            paragraph="asd"
+            paragraph="Door de juiste zoekwoorden te gebruiken zorgen wij ervoor dat jullie ook bij google bekent worden."
           />
           <div className="clear-both"></div>
         </div>
