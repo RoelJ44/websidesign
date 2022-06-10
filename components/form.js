@@ -153,7 +153,7 @@ export default function Form() {
       )}
       <form
         method="POST"
-        name="websidesign-contact_form"
+        name="websidesignContactForm"
         id="contact-form"
         netlify
         data-netlify="true"
