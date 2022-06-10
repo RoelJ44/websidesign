@@ -127,18 +127,6 @@ export default function Form() {
   //     .catch((error) => alert(error));
   // };
 
-  const handleSubmit = (e) => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...this.state }),
-    })
-      .then(() => alert("Success!"))
-      .catch((error) => alert(error));
-
-    e.preventDefault();
-  };
-
   return (
     <>
       {status && <H2 addClass="text-[#22C55E] mb-12">{status}</H2>}
@@ -164,25 +152,18 @@ export default function Form() {
           <span className="ml-1">Aan het laden...</span>
         </div>
       )}
-      <form onSubmit={handleSubmit}>
-        <p>
-          <label>
-            Your Name: <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email: <input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Message: <textarea name="message" />
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
+      <form name="contact-form" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact-form" />
+
+        <label htmlFor="name">Name *</label>
+        <input id="name" name="name" required type="text" />
+        <label htmlFor="company">Company *</label>
+        <input id="company" name="company" required type="text" />
+        <label htmlFor="email">E-mail Address *</label>
+        <input id="email" type="email" name="email" required />
+        <label htmlFor="message">Message *</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Submit</button>
       </form>
       {/* <form method="POST" name="contact form" data-netlify="true">
         <input type="hidden" name="form-name" value="contact-form" />
