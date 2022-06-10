@@ -114,7 +114,7 @@ export default function Form() {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact-form", ...inputs }),
+      body: encode({ "form-name": "WebsidesignContactForm", ...inputs }),
     })
       .then(function () {
         setLoader(false);
@@ -149,8 +149,8 @@ export default function Form() {
           <span className="ml-1">Aan het laden...</span>
         </div>
       )}
-      <form name="contact-form" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact-form" />
+      <form name="WebsidesignContactForm" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="WebsidesignContactForm" />
         <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
           <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">
             <input
