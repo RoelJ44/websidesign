@@ -34,7 +34,7 @@ export default function Navbar() {
         <div className="flex justify-between py-4 px-6 md:px-0 lg:px-20 2xl:px-16">
           <div className="w-8/12 lg:w-64 xl:w-80 flex z-50">
             <Link href="/">
-              <a href="/">
+              <a>
                 {!navbar && (
                   <>
                     {!showMobile && (
