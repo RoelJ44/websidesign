@@ -110,22 +110,22 @@ export default function Form() {
     }
   };
 
-  // const handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   fetch("/", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //     body: encode({
-  //       "form-name": "testForm",
-  //       ...inputs,
-  //     }),
-  //   })
-  //     .then(function () {
-  //       setLoader(false);
-  //       setStatus("Verzonden");
-  //     })
-  //     .catch((error) => alert(error));
-  // };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "testForm",
+        ...inputs,
+      }),
+    })
+      .then(function () {
+        setLoader(false);
+        setStatus("Verzonden");
+      })
+      .catch((error) => alert(error));
+  };
 
   return (
     <>
@@ -152,7 +152,7 @@ export default function Form() {
           <span className="ml-1">Aan het laden...</span>
         </div>
       )}
-      <form name="contact-form" method="POST" data-netlify="true">
+      {/* <form name="contact-form" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact-form" />
 
         <label htmlFor="name">Name *</label>
@@ -164,8 +164,8 @@ export default function Form() {
         <label htmlFor="message">Message *</label>
         <textarea id="message" name="message" required></textarea>
         <button type="submit">Submit</button>
-      </form>
-      {/* <form method="POST" name="contact form" data-netlify="true">
+      </form> */}
+      <form name="contact-form" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact-form" />
         <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
           <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">
@@ -281,7 +281,7 @@ export default function Form() {
             </button>
           </div>
         </div>
-      </form> */}
+      </form>
     </>
   );
 }
