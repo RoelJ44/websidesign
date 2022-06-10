@@ -82,6 +82,7 @@ export default function Form() {
   };
   const handleCheckbox = () => {
     if (checkbox.checked) {
+      checkboxError = false;
       setCheckboxErrorValue("");
       return;
     }
@@ -100,7 +101,8 @@ export default function Form() {
       nameError === false &&
       emailError === false &&
       phoneError === false &&
-      messageError === false
+      messageError === false &&
+      checkboxError === false
     ) {
       // console.log(inputs);
       setLoader(true);
@@ -152,6 +154,7 @@ export default function Form() {
         </div>
       )}
       <form method="POST" name="Contact Form" netlify>
+        <input type="hidden" name="form-name" value="Contact Form" />
         <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
           <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">
             <input
