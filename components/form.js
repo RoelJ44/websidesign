@@ -91,7 +91,7 @@ export default function Form() {
     );
   };
 
-  const handleForm = () => {
+  const handleForm = (event) => {
     handleName();
     handleEmail();
     handlePhone();
@@ -282,7 +282,7 @@ export default function Form() {
               //   setStatus("");
               // }}
               onClick={() => {
-                handleSubmit(event);
+                handleForm(event);
               }}
               type="button"
               // type="submit"
