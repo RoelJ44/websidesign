@@ -110,21 +110,32 @@ export default function Form() {
     }
   };
 
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   fetch("/", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //     body: encode({
+  //       "form-name": "testForm",
+  //       ...inputs,
+  //     }),
+  //   })
+  //     .then(function () {
+  //       setLoader(false);
+  //       setStatus("Verzonden");
+  //     })
+  //     .catch((error) => alert(error));
+  // };
+
   const handleSubmit = (event) => {
-    event.preventDefault();
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": "testForm",
-        ...inputs,
-      }),
+      body: encode({ "form-name": "contact-form", ...inputs }),
     })
-      .then(function () {
-        setLoader(false);
-        setStatus("Verzonden");
-      })
+      .then(() => alert("Success!"))
       .catch((error) => alert(error));
+    event.preventDefault();
   };
 
   return (
@@ -265,10 +276,13 @@ export default function Form() {
 
           <div className="w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full">
             <button
+              // onClick={() => {
+              //   handleForm();
+              //   setLoader(false);
+              //   setStatus("");
+              // }}
               onClick={() => {
-                handleForm();
-                setLoader(false);
-                setStatus("");
+                handleSubmit(event);
               }}
               type="button"
               // type="submit"
