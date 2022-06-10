@@ -133,7 +133,10 @@ export default function Form() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact-form", ...inputs }),
     })
-      .then(() => alert("Success!"))
+      .then(function () {
+        setLoader(false);
+        setStatus("Verzonden");
+      })
       .catch((error) => alert(error));
     event.preventDefault();
   };
@@ -276,14 +279,14 @@ export default function Form() {
 
           <div className="w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full">
             <button
-              // onClick={() => {
-              //   handleForm();
-              //   setLoader(false);
-              //   setStatus("");
-              // }}
               onClick={() => {
                 handleForm(event);
+                setLoader(false);
+                setStatus("");
               }}
+              // onClick={() => {
+              //   handleForm(event);
+              // }}
               type="button"
               // type="submit"
               className="relative bg-blue text-white w-auto px-6 py-2.5 font-swiss font-bold"
