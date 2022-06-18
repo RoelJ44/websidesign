@@ -5,15 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Slider from "react-slick";
 
-import H1 from "../components/elementComponents/h1";
 import H2 from "../components/elementComponents/h2";
-import H3 from "../components/elementComponents/h3";
-import H4 from "../components/elementComponents/h4";
-import H5 from "../components/elementComponents/h5";
-import H6 from "../components/elementComponents/h6";
-import P from "../components/elementComponents/p";
-import Line from "../components/elementComponents/line";
-import SmallLine from "../components/elementComponents/smallLine";
 import Slide from "/components/slide";
 
 export default function SlideShow() {
@@ -79,21 +71,17 @@ export default function SlideShow() {
           number="01"
           name="Jewelsdesgin"
           production="Design & Development"
-          paragraph="Phasellus convallis magna eget felis dapibus, eget laoreet magna
-                lacinia. Vestibulum gravida posuere justo. Duis posuere eu quam
-                ac dictum. Class aptent taciti sociosqu ad."
+          paragraph="Wij hebben voor jewelsdesign, een lokale edelsmid in Sittard deze prachtige website mogen maken."
           link="https://www.jewelsdesign.nl/"
         />
         <Slide
-          imageUrl="/hero_images/home.jpg"
+          imageUrl="/gedenk-sieraad.jpg"
           imageAlt="alt tekst"
-          number="01"
-          name="Jewelsdesgin"
-          production="Design & Development"
-          paragraph="Phasellus convallis magna eget felis dapibus, eget laoreet magna
-                lacinia. Vestibulum gravida posuere justo. Duis posuere eu quam
-                ac dictum. Class aptent taciti sociosqu ad."
-          link="https://www.jewelsdesign.nl/"
+          number="02"
+          name="Gedenk-sieraad.nl"
+          production="Webshop & Branding"
+          paragraph="Voor gedenk-sieraad.nl, een webshop voor gedenksieraden, hebben wij deze webshop mogen ontwikkelen. Ook hebben wij de huisstijl gemaakt."
+          link="https://gedenk-sieraad.nl/"
         />
       </Slider>
       <div className="absolute w-16 h-16 md:w-24 md:h-24 top-0 left-0 rotate-90">

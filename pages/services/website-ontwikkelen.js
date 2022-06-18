@@ -24,7 +24,8 @@ export default function Services({}) {
       pageTitle="Website ontwikkelen"
       imageSrc="website-ontwikkelen.jpg"
       altText="altText"
-      description="Heb je een website nodig die bij jou bedrijf past en je klanten op de juiste manier aanspreekt? We denken graag met je mee"
+      // description="Heb je een website nodig die bij jou bedrijf past en je klanten op de juiste manier aanspreekt? We denken graag met je mee"
+      description="Met een professioneel webdesign zorg je voor een uitstekende eerste indruk bij jouw potentiële klanten. Laat ook een website bouwen die zorgt voor meer omzet!"
       breadCrumb1="Services"
       breadCrumb2="Website ontwikkelen"
       nextPage="Contact opnemen"
@@ -35,7 +36,7 @@ export default function Services({}) {
       <div className="item container mx-auto px-4">
         <CardLarge
           title="Website ontwikkelen"
-          paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+          paragraph="We beginnen altijd met een ontmoetingsgesprek om te kijken wat jullie bericht is naar de klant. Vervolgensgaan wij aan de slag met het maken van een ontwerp, aanpassingen zijn mogelijk tot het design goed is. Eenmaal goedgekeurd beginnen wij met het ontwikkelen van de site (1 tot 3 weken)."
           imageLink="/website-ontwikkelen.jpg"
         />
       </div>

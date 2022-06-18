@@ -35,7 +35,7 @@ export default function Services({}) {
       <div className="item container mx-auto px-4">
         <CardLarge
           title="Webshop ontwikkelen"
-          paragraph="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting."
+          paragraph="We beginnen altijd met een ontmoetingsgesprek om te kijken wat jullie wensen zijn. Vervolgensgaan wij aan de slag met het maken van een ontwerp, aanpassingen zijn mogelijk tot het design goed is. Eenmaal goedgekeurd beginnen wij met het ontwikkelen van de site (2 tot 4 weken)."
           imageLink="/webshop-ontwikkelen.jpg"
         />
       </div>

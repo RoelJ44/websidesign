@@ -82,7 +82,7 @@ export default function SlideShow({
                   rel="noreferrer"
                   target="_blank"
                   href={link}
-                  className="relative mx-auto px-6 py-2.5 font-swiss font-bold bg-white text-blue hover:opacity-50 transition-all"
+                  className="relative mx-auto px-6 py-2.5 font-swiss font-bold bg-white text-blue transition-all"
                 >
                   Site bekijken
                   <div className="w-4 h-4 absolute right-0 bottom-0 rotate-90 bg-blue">

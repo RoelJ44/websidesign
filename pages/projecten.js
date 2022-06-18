@@ -34,25 +34,25 @@ export default function Projecten() {
   const projecten = [
     {
       name: "Jewelsdesign",
-      image: "/project_images/jewelsdesign.png",
+      image: "/project_images/jewelsdesign.jpg",
       imageAlt: "sad",
       link: "https://www.jewelsdesign.nl/pages/home/",
       category: ["all", "design", "development"],
     },
     {
-      name: "Gedenk-sieraad",
-      image: "/project_images/jewelsdesign.png",
+      name: "Gedenk-sieraad.nl",
+      image: "/project_images/gedenk-sieraad.jpg",
       imageAlt: "sad",
-      link: "https://www.jewelsdesign.nl/pages/home/",
+      link: "https://gedenk-sieraad.nl/",
       category: ["all", "webshop"],
     },
-    {
-      name: "YourYinYang",
-      image: "/project_images/jewelsdesign.png",
-      imageAlt: "sad",
-      link: "https://www.jewelsdesign.nl/pages/home/",
-      category: ["all", "development"],
-    },
+    // {
+    //   name: "YourYinYang",
+    //   image: "/project_images/jewelsdesign.png",
+    //   imageAlt: "sad",
+    //   link: "https://www.jewelsdesign.nl/pages/home/",
+    //   category: ["all", "development"],
+    // },
   ];
 
   const [filter, setFilter] = useState("all");
