@@ -103,8 +103,8 @@ export default function Footer() {
                       </a>
                     </Link>
                   </li>
-                  <li className="mb-4">Kvk nr. 212 115 205</li>
-                  <li className="mb-4">Btw nr. 544 546 274</li>
+                  <li className="mb-4">Kvk nr. 86 78 61 72</li>
+                  {/* <li className="mb-4">Btw nr. 544 546 274</li> */}
                 </ul>
               </div>
             </div>

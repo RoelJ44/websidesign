@@ -37,8 +37,6 @@ export default function SlideShow({
               <Image
                 src={imageUrl}
                 alt={imageAlt}
-                width={1920}
-                height={1920}
                 objectFit="cover"
                 layout="fill"
               />
