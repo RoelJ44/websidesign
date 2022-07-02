@@ -150,6 +150,11 @@ export default function Form() {
         </div>
       )}
       <form name="Websidesign-ContactForm" method="POST" data-netlify="true">
+        <input
+          type="hidden"
+          name="subject"
+          value="Contactformulier Websidesign"
+        />
         <input type="hidden" name="form-name" value="Websidesign-ContactForm" />
         <div className="w-full md:top-20 max-w-md mx-auto sm:max-w-none">
           <div className="relative mb-8 w-10/12 sm:w-8/12 mx-auto md:ml-0 md:w-full lg:w-[47.5%] lg:mr-[2.5%] lg:inline-block">

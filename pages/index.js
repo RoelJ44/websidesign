@@ -22,6 +22,7 @@ export default function Home() {
       </Head>
       <Layout
         pageTitle="Home"
+        // header="Wij maken jouw website of webshop innovatief en duurzaam voor de snel veranderende maatschappij om ons heen."
         header="op maat website of webshop gemaakt voor jouw bezoeker"
         imageSrc="home.jpg"
         altText="altText"
