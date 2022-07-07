@@ -104,7 +104,7 @@ export default function Footer() {
                     </Link>
                   </li>
                   <li className="mb-4">Kvk nr. 86 78 61 72</li>
-                  {/* <li className="mb-4">Btw nr. 544 546 274</li> */}
+                  <li className="mb-4">Btw nr. NL004312576B81</li>
                 </ul>
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function Footer() {
           </a> */}
         {/* </div> */}
         <div className="text-center pt-6 sm:pt-8 font-light flex items-center justify-center">
-          Copyright © 2022
+          Copyright © 2022 Websidesign
         </div>
       </div>
       <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 absolute bottom-0 right-0 -rotate-90">
