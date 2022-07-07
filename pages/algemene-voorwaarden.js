@@ -102,7 +102,7 @@ export default function Services({}) {
               </li>
               <li className="mb-2">
                 3.7 Alle kosten verbonden aan de betaling, inclusief
-                wisselkosten en bankkosten, zijn voor rekening van de klant.{" "}
+                wisselkosten en bankkosten, zijn voor rekening van de klant.
               </li>
             </ul>
           </P>
@@ -113,7 +113,7 @@ export default function Services({}) {
             <ul>
               <li className="mb-2">
                 4.1 De opdrachtgever levert tijdig de benodigde gegevens, tekst
-                en/of afbeeldingen aan Websidesign{" "}
+                en/of afbeeldingen aan Websidesign
               </li>
               <li className="mb-2">
                 4.2 Websidesign zal zo spoedig mogelijk na ontvangst van de
@@ -208,9 +208,9 @@ export default function Services({}) {
               </li>
               <li className="mb-2">
                 8.2 Websidesign is niet verantwoordelijk voor oneigenlijk
-                gebruik van content (tekst, foto's en video's), storingen of
-                ontoegankelijkheid door uitval van internet of andere providers,
-                stroomuitval, etc.
+                gebruik van content (tekst, foto{"'"}s en video{"'"}s),
+                storingen of ontoegankelijkheid door uitval van internet of
+                andere providers, stroomuitval, etc.
               </li>
               <li className="mb-2">
                 8.3 Klanten mogen deze website niet gebruiken om:
@@ -248,7 +248,7 @@ export default function Services({}) {
               <li className="mb-2">
                 8.4 De opdrachtgever zal de ontwikkelde website niet gebruiken
                 voor pornografisch, pornografisch of racistisch materiaal,
-                illegale software, mp3's en soortgelijke materialen.
+                illegale software, mp3{"'"}s en soortgelijke materialen.
               </li>
             </ul>
           </P>
@@ -423,8 +423,9 @@ export default function Services({}) {
               <li className="mb-2">
                 14.1 Nadat de opdrachtgever de website heeft geaccepteerd, zal
                 de klant een hyperlink van de startpagina van deze website naar
-                de startpagina van de ontwikkelaar in een "Gemaakt door
-                Websidesign"- of soortgelijke vorm verstrekken en onderhouden.
+                de startpagina van de ontwikkelaar in een {'"'}Gemaakt door
+                Websidesign{'"'}- of soortgelijke vorm verstrekken en
+                onderhouden.
               </li>
               <li className="mb-2">
                 14.2 Het is Websidesign toegestaan om hun werkrelaties en/of
